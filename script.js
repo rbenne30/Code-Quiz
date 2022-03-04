@@ -1,4 +1,4 @@
-const questions = [
+gitconst questions = [
     "which Variable(s) are considered global", 
     "Inside Which HTML element do we put the Javascript", 
     "Where is the correct place to insert a Javascript", 
@@ -15,10 +15,17 @@ const questionsTwo = [
     },
     {
         questionTitleTwo: "inside Which HTML element do we put the Javascript", 
-        choiceA: "<js>",
-        choiceB: "<script>",
-        choiceC: "<scripting>",
-        choiceD: "<javascript>",
+        choiceE: "<js>",
+        choiceF: "<script>",
+        choiceG: "<scripting>",
+        choiceH: "<javascript>",
+    },
+    {
+        questionTitleThree: "Where is the correct place to insert a Javascript", 
+        choiceI: "The <body> section",
+        choiceJ: "The <head> section",
+        choiceK: "Both the ,<head> section and the <body> section are correct",
+    
     },
 ]
 
@@ -43,13 +50,13 @@ function showQuestions (){
     var questionTitleTwo = document.querySelector("#question-titletwo")
     console.log(questionTitleTwo)
     questionTitleTwo.textContent = questionsTwo[1].questionTitleTwo
-    var buttonE = document.querySelector("choiceE")
+    var buttonE = document.querySelector("#choiceE")
     buttonE.textContent = questionsTwo[1].choiceE
-    var buttonF = document.querySelector("choiceF")
+    var buttonF = document.querySelector("#choiceF")
     buttonF.textContent = questionsTwo[1].choiceF
-    var buttonG = document.querySelector("choiceG")
+    var buttonG = document.querySelector("#choiceG")
     buttonG.textContent = questionsTwo[1].choiceG
-    var buttonH = document.querySelector("choiceH")
+    var buttonH = document.querySelector("#choiceH")
     buttonH.textContent = questionsTwo[1].choiceH
 
 }
