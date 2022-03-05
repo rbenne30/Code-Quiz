@@ -15,46 +15,54 @@
 </head>
 
 <body>
-    <div class="timer hide">
-        <span class="timer__part timer__part--minutes">00</span>
-
+<button onclick="startquiz" id="start-btn" class="btn">Start Quiz</button>
+    <div class="base-timer">
+        <span id="time">00</span>
     </div>
-    <!-- <div class="container"> -->
-    <div class="question-container hide" id=questions>
-        <h1 id="question-title"></h1>
-        <div id="answer-buttons" class="btn-grid">
-            <button id="choiceA" class="btn">"Answer 1"</button>
-            <button id="choiceB"class="btn">Answer 2</button>
-            <button id="choiceC"class="btn">Answer 3</button>
-            <button id="choiceD"class="btn">Answer 4</button>
+        <div id="q0" class="hide">
+            <h1>Which variable(s) are considered global</h1>
+            <div id="answer-buttons" class="q0 answers btn-grid">
+                <button id="choiceA" class="q0 answers btn">"input"</button>
+                <button id="choiceB" class="q0 answers btn">input and sum</button>
+                <button id="choiceC" class="q0 answers btn">sum</button>
+                <button id="choiceD" class="q0 answers btn">sum num</button>
+            </div>
         </div>
-        <div class="question-container hide" id=questions></div>
-        <h2 id="question-titletwo"></h2>
-        <div id="answer-buttons" class="btn-grid">
-            <button id="choiceE" class="btn">"Answer 1"</button>
-            <button id="choiceF"class="btn">Answer 2</button>
-            <button id="choiceG"class="btn">Answer 3</button>
-            <button id="choiceH"class="btn">Answer 4</button>
+
+        <div id="q1" class="hide">
+            <h2>Inside which HTML element do we put the javascript</h2>
+            <div id="answer-buttons" class="q1 answers btn-grid">
+                <button id="choiceA" class="q1 answers btn">js</button>
+                <button id="choiceB" class="q1 answers btn">script</button>
+                <button id="choiceC" class="q1 answers btn"> scripting</button>
+                <button id="choiceD" class="q1  answers btn">javascript</button>
+            </div>
         </div>
-        <div class="question-container hide" id=questions></div>
-        <h3 id="question-titlethree"></h3>
-        <div id="answer-buttons" class="btn-grid">
-            <button id="choiceE" class="btn">"Answer 1"</button>
-            <button id="choiceF"class="btn">Answer 2</button>
-            <button id="choiceG"class="btn">Answer 3</button>
-            <button id="choiceH"class="btn">Answer 4</button>
+
+        <div id="q2" class="hide">
+            <h3>Where is the correct place to insert a javascript</h3>
+            <div id="answer-buttons" class=" q2 answers btn-grid">
+                <button id="choiceA" class="q2  answers btn">the body section</button>
+                <button id="choiceB" class=" q2  answers btn">the head section</button>
+                <button id="choiceC" class="q2   answers btn">both the head and the body section</button>
+            </div>
+        </div>
+
+        <div id="q3" class="hide">
+            <h4>The external javascript file must contain the script tag</h4>
+            <div id="answer-buttons" class="btn-grid">
+                <button id="choiceA" class="q3 answers btn">false</button>
+                <button id="choiceB" class="q3 answers btn"> true</button>
+            </div>
+            
+            </div>
         </div>
     </div>
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
+            <div class="score">
+                <span id="answer"></span>
 
-    </div>
-
-    <div class="score">
-        <span id="right-answers"></span>
-
-    </div>
-    <script src= "./script.js"></script>
+            </div>
+            <script src="./script.js"></script>
 </body>
 
 </html>
