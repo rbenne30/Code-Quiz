@@ -15,11 +15,10 @@
 </head>
 
 <body>
+<button onclick="startquiz" id="start-btn" class="btn">Start Quiz</button>
     <div class="base-timer">
         <span id="time">00</span>
     </div>
-    <!-- <div class="container"> -->
-    <div class="question-container" id=questions>
         <div id="q0" class="hide">
             <h1>Which variable(s) are considered global</h1>
             <div id="answer-buttons" class="q0 answers btn-grid">
@@ -36,7 +35,7 @@
                 <button id="choiceA" class="q1 answers btn">js</button>
                 <button id="choiceB" class="q1 answers btn">script</button>
                 <button id="choiceC" class="q1 answers btn"> scripting</button>
-                <button id="choiceD" lass="q1  answers btn">javascript</button>
+                <button id="choiceD" class="q1  answers btn">javascript</button>
             </div>
         </div>
 
@@ -55,13 +54,12 @@
                 <button id="choiceA" class="q3 answers btn">false</button>
                 <button id="choiceB" class="q3 answers btn"> true</button>
             </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
+            
             </div>
         </div>
     </div>
             <div class="score">
-                <span id="right-answers"></span>
+                <span id="answer"></span>
 
             </div>
             <script src="./script.js"></script>
