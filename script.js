@@ -28,16 +28,16 @@ document.querySelector('.answers').addEventListener('click', (e)=> console.log(e
 var q0  = questions[0];
 
 // update title with current question
-var titleEl = document.getElementById("Inside which HTML element do we put the javascript");
-titleEl.textContent = "Which variable(s) are considered global";
+var titleEl = document.getElementById();
+titleEl.textContent = 'Which variable(s) are considered global';
 
 
 function handleClock() {
     document
         .querySelector('#time')
         .innerText = clock;
-     //document.querySelector('#q'+qIndex).classList.remove('hide')
-    qIndex++;
+     //document.querySelector('#q'+'qindex').classList.remove('hide')
+    qIndex++; 
     clock--;
     if(clock<1) {
         clearInterval(intervalId);
