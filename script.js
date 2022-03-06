@@ -21,8 +21,6 @@ startBtn.addEventListener("click", function(){
     console.log("hello")
     let intervalId = setInterval(handleClock,1000);
 });
-var answersBtn = document.querySelector("#answerBtn")
-answersBtn.addEventListener("click", )
 
 document.querySelector('.answers').addEventListener('click', (e)=> console.log(e.target.innerText));
 
