@@ -4,24 +4,27 @@ let clock = 60;
 let qIndex = 0;
 
 const questions = [
-    "which Variable(s) are considered global",
-    "Inside Which HTML element do we put the Javascript", 
-    "Where is the correct place to insert a Javascript", 
-    "The external Javascript file must contain the <script> tag.",
-];
+    'which Variable(s) are considered global',
+    'Inside Which HTML element do we put the Javascript', 
+    'Where is the correct place to insert a Javascript', 
+    'The external Javascript file must contain the <script> tag.',
+]
 
 const ans = ['sum','js','the body section','true']
 
 
-var startBtn = document.querySelector("#q0")
-startBtn.addEventListener("click", startBtn);
-
-var startBtn = document.querySelector("#q2")
-startBtn.addEventListener("click", startBtn);
+ 
+// startBtn.addEventListener("click", startBtn);
+//rename the startBtn variables to be different and make them refer to the element they are capturing 
+var startBtn = document.querySelector("#start-btn")
+startBtn.addEventListener("click", function(){ 
+    console.log("hello")
+    let intervalId = setInterval(handleClock,1000);
+});
+var answersBtn = document.querySelector("#answerBtn")
+answersBtn.addEventListener("click", )
 
 document.querySelector('.answers').addEventListener('click', (e)=> console.log(e.target.innerText));
-
-let intervalId = setInterval(handleClock,1000);
 
 function handleClock() {
     document
@@ -34,4 +37,5 @@ function handleClock() {
         clearInterval(intervalId);
 
     }
+  
 }
