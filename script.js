@@ -9,12 +9,6 @@ const questions = [
     "Where is the correct place to insert a Javascript", 
     "The external Javascript file must contain the <script> tag.",
 ];
-function myfunction(){
-    var element = 
-    document.getElementById("q0");
-    element.classList.remove("hide");
-}
-
 
 const ans = ['sum','js','the body section','true']
 
